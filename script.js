@@ -23,3 +23,30 @@
 
 'use strict';
 
+
+const movieDB = {
+    movies: [
+        "Логан",
+        "Лига справедливости",
+        "Ла-ла лэнд",
+        "Одержимость",
+        "Скотт Пилигрим против..."
+    ]
+};
+
+let numberOfFilms = prompt('how much films have you seen?', 0);
+let a = prompt('what was the last movie you watched?');
+let b = prompt('how do you rate it?');
+let c = prompt('what was the last movie you watched?');
+let d = prompt('how do you rate it?');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
